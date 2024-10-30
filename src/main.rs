@@ -55,7 +55,7 @@ fn main() -> Result<()> {
 
     match cli.cmd {
         Commands::Put { key, value, image } => {
-            // Convert the optional String to Zeroizing<String>
+
             let password: Zeroizing<String> = match value {
                 Some(v) => Zeroizing::new(v),
                 None => get_password_from_prompt("Enter password: ")?,
