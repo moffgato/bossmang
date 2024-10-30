@@ -1,0 +1,11 @@
+[package]
+name = "boss"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chacha20poly1305 = { version = "0.10.1", features = ["stream"] }
+clap = { version = "4.5.20", features = ["derive"] }
+serde = { version = "1.0.214", features = ["derive"] }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+zeroize = { version = "1.8.1", features = ["derive"] }
